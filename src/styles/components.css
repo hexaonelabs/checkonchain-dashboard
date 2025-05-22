@@ -1,0 +1,158 @@
+/* Theme Switcher Styles */
+.theme-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.theme-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-text-light);
+  border-radius: 30px;
+  transition: var(--transition-normal);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: var(--transition-normal);
+}
+
+input:checked + .slider {
+  background-color: var(--color-primary);
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+.icon {
+  position: absolute;
+  top: 5px;
+  font-size: 14px;
+  transition: opacity var(--transition-normal);
+}
+
+.sun-icon {
+  left: 7px;
+  opacity: 1;
+}
+
+.moon-icon {
+  right: 7px;
+  opacity: 0;
+}
+
+input:checked ~ .sun-icon {
+  opacity: 0;
+}
+
+input:checked ~ .moon-icon {
+  opacity: 1;
+}
+
+/* Chart Adder Styles */
+.chart-adder {
+  background-color: var(--color-card);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  animation: fadeIn 0.5s ease;
+}
+
+.add-chart-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: flex-end;
+}
+
+.input-container {
+  flex: 1;
+  min-width: 250px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: var(--space-1);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.input-container input {
+  width: 100%;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.input-container input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+  outline: none;
+}
+
+.add-chart-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  min-width: 120px;
+  margin-bottom: 1px; /* Align with inputs */
+}
+
+.add-chart-button:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.add-chart-button:active {
+  transform: translateY(0);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .add-chart-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .input-container {
+    min-width: 100%;
+  }
+  
+  .add-chart-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,104 @@
+/* Light theme (default) */
+:root {
+  /* Color system */
+  --color-primary: #3772ff;
+  --color-primary-light: #6e9aff;
+  --color-primary-dark: #0045ff;
+  
+  --color-secondary: #f45b69;
+  --color-secondary-light: #ff8a95;
+  --color-secondary-dark: #c62e3f;
+  
+  --color-accent: #ffd166;
+  --color-accent-light: #ffdf94;
+  --color-accent-dark: #ffc333;
+  
+  --color-success: #06d6a0;
+  --color-success-light: #39ffcf;
+  --color-success-dark: #05a47a;
+  
+  --color-warning: #f9c74f;
+  --color-warning-light: #fbd87d;
+  --color-warning-dark: #f7b721;
+  
+  --color-error: #ef476f;
+  --color-error-light: #f37695;
+  --color-error-dark: #df1b48;
+  
+  /* Neutral colors */
+  --color-background: #f8f9fa;
+  --color-card: #ffffff;
+  --color-text: #212529;
+  --color-text-light: #6c757d;
+  --color-heading: #212529;
+  --color-border: #dee2e6;
+  
+  /* Effects */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Spacing (8px system) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+  
+  /* Typography */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  
+  /* Animation */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --color-primary: #4d80ff;
+  --color-primary-light: #7da0ff;
+  --color-primary-dark: #2e6eff;
+  
+  --color-secondary: #ff6b79;
+  --color-secondary-light: #ff99a3;
+  --color-secondary-dark: #ff3d4f;
+  
+  --color-accent: #ffd166;
+  --color-accent-light: #ffdf94;
+  --color-accent-dark: #ffc333;
+  
+  --color-success: #06d6a0;
+  --color-success-light: #39ffcf;
+  --color-success-dark: #05a47a;
+  
+  --color-warning: #f9c74f;
+  --color-warning-light: #fbd87d;
+  --color-warning-dark: #f7b721;
+  
+  --color-error: #ef476f;
+  --color-error-light: #f37695;
+  --color-error-dark: #df1b48;
+  
+  /* Neutral colors */
+  --color-background: #121212;
+  --color-card: #1e1e1e;
+  --color-text: #e9ecef;
+  --color-text-light: #adb5bd;
+  --color-heading: #f8f9fa;
+  --color-border: #343a40;
+  
+  /* Shadows are more subtle in dark mode */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
