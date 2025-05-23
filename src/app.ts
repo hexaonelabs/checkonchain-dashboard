@@ -1,5 +1,5 @@
 import { Dashboard } from "./components/dashboard";
-import { ThemeSwitcher } from "./components/theme-switcher";
+// import { ThemeSwitcher } from "./components/theme-switcher";
 import { ChartAdder } from "./components/chart-adder";
 import { AppState } from "./state/app-state";
 

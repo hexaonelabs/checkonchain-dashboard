@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:app": "npm run build && firebase deploy --only hosting"
   },
   "devDependencies": {
     "typescript": "^5.5.3",
